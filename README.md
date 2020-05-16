@@ -1,7 +1,7 @@
 # Mastermind
 A code-breaking game, commonly known as Mastermind or Bulls &amp; Cows.
 
-Reference:
+References:
 
 https://en.wikipedia.org/wiki/Mastermind_(board_game)
 
