@@ -1,5 +1,5 @@
 # Mastermind
-A code-breaking game, commonly known as Mastermind or Bulls &amp; Cows.
+A code-breaking game, commonly known as Mastermind or Bulls &amp; Cows. The solution is generated randomly every time the player start a new game. Hence, the player can expect the solution to be unique and different for each game.
 
 References:
 
