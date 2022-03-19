@@ -1,91 +1,113 @@
 <html>
 <head>
-	<title> Mastermind </title>
+    <title> Mastermind </title>
 
-<script type="text/javascript" src="Function.js"> </script>
+    <script type="text/javascript" src="Function.js"></script>
 </head>
 <body>
 
-<center><table border="5" style="background-color:white"><tr style="background-color:black"><td><font color="white">
-How to Play : <br />
-1. Guess 5 numbers out of 1-6. (Click the picture) <br />
-2. You have 10 chances to guess. <br />
-3. Each number can be used for more than once. <br />
-4. <font color="yellow"><b>"A"</b></font> column shows how much number that is correct but in a wrong position. <br />
-5. <font color="green"><b>"B"</b></font> column shows how much number that is correct and in a correct position as well. 
-</td></tr></table><br />
+<center>
+    <table border="5" style="background-color:white">
+        <tr style="background-color:black">
+            <td><font color="white">
+                How to Play : <br/>
+                1. Guess 5 numbers out of 1-6. (Click the picture) <br/>
+                2. You have 10 chances to guess. <br/>
+                3. Each number can be used for more than once. <br/>
+                4. <font color="yellow"><b>"A"</b></font> column shows how much number that is correct but in a wrong
+                position. <br/>
+                5. <font color="green"><b>"B"</b></font> column shows how much number that is correct and in a correct
+                position as well.
+            </td>
+        </tr>
+    </table>
+    <br/>
 
-<table>
-<tbody align="center">
-<tr>
-<td width="150"> <b>1 </td>
-<td width="150"> <b>2 </td>
-<td width="150"> <b>3 </td>
-<td width="150"> <b>4 </td>
-<td width="150"> <b>5 </td>
-<td width="150"> <b>6 </td>
-</tr>
+    <table>
+        <tbody align="center">
+        <tr>
+            <td width="150"><b>1</td>
+            <td width="150"><b>2</td>
+            <td width="150"><b>3</td>
+            <td width="150"><b>4</td>
+            <td width="150"><b>5</td>
+            <td width="150"><b>6</td>
+        </tr>
 
-<tr>
-<td> <img src="Img1.gif" onclick="f1()" /> </td>
-<td> <img src="Img2.gif" onclick="f2()" /> </td>
-<td> <img src="Img3.gif" onclick="f3()" /> </td>
-<td> <img src="Img4.gif" onclick="f4()" /> </td>
-<td> <img src="Img5.gif" onclick="f5()" /> </td>
-<td> <img src="Img6.gif" onclick="f6()" /> </td>
-</tr>
-</tbody>
-</table>
+        <tr>
+            <td><img src="Img1.gif" onclick="f1()"/></td>
+            <td><img src="Img2.gif" onclick="f2()"/></td>
+            <td><img src="Img3.gif" onclick="f3()"/></td>
+            <td><img src="Img4.gif" onclick="f4()"/></td>
+            <td><img src="Img5.gif" onclick="f5()"/></td>
+            <td><img src="Img6.gif" onclick="f6()"/></td>
+        </tr>
+        </tbody>
+    </table>
 
 
-<b>Your answer : <br />
-<table border="1" style="background-color:black">
-<tbody align="center">
-<tr>
-<td width="150" style="background-color:lightgray"> <div id="a"> <b>0 </div> </td>
-<td width="150" style="background-color:lightgray"> <div id="b"> <b>0 </div> </td>
-<td width="150" style="background-color:lightgray"> <div id="c"> <b>0 </div> </td>
-<td width="150" style="background-color:lightgray"> <div id="d"> <b>0 </div> </td>
-<td width="150" style="background-color:lightgray"> <div id="e"> <b>0 </div> </td>
-<td width="50" style="background-color:yellow"> <b>A </td>
-<td width="50" style="background-color:green"> <b>B </td>
-</tr>
+    <b>Your answer : <br/>
+        <table border="1" style="background-color:black">
+            <tbody align="center">
+            <tr>
+                <td width="150" style="background-color:lightgray">
+                    <div id="a"><b>0</div>
+                </td>
+                <td width="150" style="background-color:lightgray">
+                    <div id="b"><b>0</div>
+                </td>
+                <td width="150" style="background-color:lightgray">
+                    <div id="c"><b>0</div>
+                </td>
+                <td width="150" style="background-color:lightgray">
+                    <div id="d"><b>0</div>
+                </td>
+                <td width="150" style="background-color:lightgray">
+                    <div id="e"><b>0</div>
+                </td>
+                <td width="50" style="background-color:yellow"><b>A</td>
+                <td width="50" style="background-color:green"><b>B</td>
+            </tr>
 
-<tr>
-<td width="150" style="background-color:white"> <img id="z" src="Marin.gif" /> </td>
-<td width="150" style="background-color:white"> <img id="y" src="Marin.gif" /> </td>
-<td width="150" style="background-color:white"> <img id="x" src="Marin.gif" /> </td>
-<td width="150" style="background-color:white"> <img id="w" src="Marin.gif" /> </td>
-<td width="150" style="background-color:white"> <img id="v" src="Marin.gif"> </td>
-<td width="50" style="background-color:yellow"> <div id="f"> <b>0 </div> </td>
-<td width="50" style="background-color:green"> <div id="g"> <b>0 </div> </td>
-</tr>
-</tbody>
-</table>
+            <tr>
+                <td width="150" style="background-color:white"><img id="z" src="Marin.gif"/></td>
+                <td width="150" style="background-color:white"><img id="y" src="Marin.gif"/></td>
+                <td width="150" style="background-color:white"><img id="x" src="Marin.gif"/></td>
+                <td width="150" style="background-color:white"><img id="w" src="Marin.gif"/></td>
+                <td width="150" style="background-color:white"><img id="v" src="Marin.gif"></td>
+                <td width="50" style="background-color:yellow">
+                    <div id="f"><b>0</div>
+                </td>
+                <td width="50" style="background-color:green">
+                    <div id="g"><b>0</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-<br />
-<button type="button" onclick="submit()"> Submit </button>
-<button type="button" onclick="erase()"> Erase </button>
-<button type="button" onclick="restart()"> Restart </button>
-<br />
+        <br/>
+        <button type="button" onclick="submit()"> Submit</button>
+        <button type="button" onclick="erase()"> Erase</button>
+        <button type="button" onclick="restart()"> Restart</button>
+        <br/>
 
-<table>
-<tbody>
-<tr>
-<td>
-Your chances : 
-</td>
-<td>
-<div id="chance"> 10 </div>
-</td>
-</tr>
-</tbody>
-</table>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    Your chances :
+                </td>
+                <td>
+                    <div id="chance"> 10</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-<p>
-<div id="result"> </div>
-<div id="trial"> </div>
-<div id="answer"> </div>
+        <p>
+        <div id="result"></div>
+        <div id="trial"></div>
+        <div id="answer"></div>
 
 </body>
 </html>
